@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlayStation 2 Slim (Renewed) | Games Planet</title>
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 20px 0 10px;
+    }
+    .rainbow-text {
+      background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1rem;
+      margin: 0 15px 20px;
+      line-height: 1.5;
+    }
+    .button {
+      background: linear-gradient(135deg, #00ffe1, #0051ff);
+      border: none;
+      padding: 10px 20px;
+      margin: 10px 5px;
+      color: white;
+      font-size: 0.9rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #00ffe1;
+    }
+    .buy-container {
+      max-width: 720px;
+      margin: 10px auto 20px;
+      text-align: right;
+      padding: 0 20px;
+    }
+    .buy-btn {
+      background: linear-gradient(135deg, #00ff88, #00b34d);
+      color: white;
+      font-size: 1rem;
+      padding: 12px 30px;
+      border-radius: 50px;
+      box-shadow: 0 0 10px #00ff88;
+      text-decoration: none;
+    }
+    iframe {
+      width: 100%;
+      max-width: 720px;
+      height: 220px;
+      border: none;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+    .chat-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      text-align: center;
+      font-size: 28px;
+      line-height: 55px;
+      box-shadow: 0 0 15px #25d366;
+      z-index: 999;
+      text-decoration: none;
+    }
+    .video-selector {
+      margin: 20px auto 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .details {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: left;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    footer {
+      font-size: 0.85rem;
+      margin: 40px 0 20px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1><span class="rainbow-text">Games Planet</span> – PlayStation 2 Slim (Renewed)</h1>
+  <p>🛡️ With Minimum 1 Month Warranty<br>🧩 Optional Accessories & Game Storage Available</p>
+
+  <div class="video-selector">
+    <button class="button" onclick="setVideo('https://www.youtube.com/embed/py-V7CQjcYM')">📦 Quality Check</button>
+    <button class="button" onclick="setVideo('https://www.youtube.com/embed/xGR0vUM1-Jw')">🎮 Full Game List</button>
+    <button class="button" onclick="setVideo('https://www.youtube.com/embed/Lb3dRycJbEc')">🕹️ Gameplay Demo</button>
+    <button class="button" onclick="setVideo('https://www.youtube.com/embed/bF3M4aGXHSU')">📥 How to Order</button>
+  </div>
+
+  <iframe id="mainVideo" src="https://www.youtube.com/embed/bF3M4aGXHSU?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+  <div class="buy-container">
+    <a href="https://gamesplanet13.github.io/ps2/" class="buy-btn">🛒 Buy Now</a>
+  </div>
+
+  <div class="details">
+    <h2>Product Description:</h2>
+    <p>Imported & renewed PlayStation 2 Slim. Comes fully tested and includes 1 month warranty. Optional accessories include gamepads, AV/HDMI cable, power adapter, and USB game storage.</p>
+
+    <h2>Terms & Conditions:</h2>
+    <ul>
+      <li>All consoles are tested and in working condition before shipping.</li>
+      <li>1-month functional warranty provided (does not cover physical damage or mishandling).</li>
+      <li>Returns allowed only if product is not working, reported within 3 days of delivery.</li>
+      <li>Shipping charges non-refundable. Replacement will be provided if needed.</li>
+      <li>For any issue, contact support via WhatsApp directly.</li>
+    </ul>
+  </div>
+
+  <footer>
+    All Rights Reserved © 2025 Games Planet
+  </footer>
+
+  <a class="chat-float" href="https://wa.me/917983624797" target="_blank">💬</a>
+
+  <script>
+    function setVideo(url) {
+      const player = document.getElementById('mainVideo');
+      player.src = url + '?autoplay=1';
+    }
+  </script>
+</body>
+</html>
